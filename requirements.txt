@@ -1,0 +1,14 @@
+# Core Deep Learning & Computer Vision
+tensorflow>=2.10.0
+numpy>=1.23.0
+Pillow>=9.0.0
+
+# Text Processing & Utilities
+tqdm>=4.64.0
+requests>=2.28.0
+
+# Visualization & Evaluation
+matplotlib>=3.5.0
+
+# Environment & Credential Management
+python-dotenv>=1.0.0

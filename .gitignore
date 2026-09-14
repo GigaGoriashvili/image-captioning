@@ -1,0 +1,97 @@
+# ==============================================================================
+# Git Ignore Configuration for Image Captioning Project
+# ==============================================================================
+
+# --- Sensitive Credentials & Secrets ---
+# NEVER commit environment variables, API keys, or cloud access tokens
+.env
+.env.*
+!.env.example
+*.env
+kaggle.json
+credentials.json
+client_secret*.json
+*.pem
+*.key
+*.token
+*.p12
+*.crt
+
+# --- Large Datasets & Raw Media ---
+# Flickr8k dataset assets & temp images
+images/
+Images/
+captions.txt
+Flickr8k/
+Flickr8k_Dataset/
+Flickr8k_text/
+data/
+datasets/
+temp_test_image.jpg
+*.zip
+*.tar.gz
+
+# --- Model Weights, Embeddings & Large Artifacts ---
+# Do not track binary checkpoints and feature caches in Git
+*.h5
+*.keras
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.pb
+features.pkl
+tokenizer.pkl
+final_caption_model.h5
+checkpoints/
+weights/
+working/
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Jupyter Notebook Artifacts ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.virtual_documents/
+
+# --- Python Build & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Operating System & IDE Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
